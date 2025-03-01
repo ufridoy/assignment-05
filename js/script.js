@@ -20,14 +20,26 @@ const formateWeekday =currentWeekday.toLocaleDateString('en-Us',{
 document.getElementById('current-weekday').innerText=formateWeekday;
 
 
+// checkbox count increase and decrease
 document.getElementById('first-complete-btn').addEventListener('click', 
     function (event) {
-
-        const count = event.target.innerText === "+" ? -1 : 1; // 1 || -1
-        const countIncrease = document.getElementById("nav-checkbox-count");
+        const count = event.target.innerText === "+" ? -1 : 1;
+        const countIncrease = document.getElementById('nav-checkbox-count');
         const countQuantity = parseInt(countIncrease.innerText);
         const newQuantity = Math.max(0, countQuantity + count);
         countIncrease.innerText = newQuantity;
-        alert('board alert successfully');
 
+        const headerCountDecrese = document.getElementById('header-checkbox-count');
+        const headerCountQuantity = parseInt(headerCountDecrese.innerText);
+        const headerNewQuantity = Math.max(0, headerCountQuantity - count);
+        headerCountDecrese.innerText = headerNewQuantity;               
+        
+
+        
+
+
+
+
+
+        alert('board alert successfully');
 })
