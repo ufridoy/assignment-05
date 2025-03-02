@@ -13,16 +13,25 @@ const formateDate =currentDate.toLocaleDateString('en-US',{
     year: 'numeric', 
 })
 document.getElementById('current-date').innerText=formateDate;
+
+// current weekday
 const currentWeekday = new Date();
 const formateWeekday =currentWeekday.toLocaleDateString('en-Us',{
     weekday: 'short'
 })
 document.getElementById('current-weekday').innerText=formateWeekday;
 
+// new file location
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('discover-btn').addEventListener('click', function () {   
+        window.location.href = 'another-page.html';
+    });
 
-document.getElementById('discover-btn').addEventListener('click', function () {   
-    window.location.href = 'another-page.html';
+    // document.getElementById('home-bac').addEventListener('onclick', function () {   
+    //     window.location.href = 'index.html';
+    // });
 });
+
 
 
 // checkbox count increase and decrease
@@ -39,13 +48,15 @@ document.querySelectorAll('.complete-btn').forEach(button => {button.addEventLis
         const headerNewQuantity = Math.max(0, headerCountQuantity - count);
         headerCountDecrese.innerText = headerNewQuantity;
 
+        
+
         const massageBox = document.getElementById('massage-box');
         const clearHistoryBtn = document.getElementById('clear-history-btn');
 
 
         const massageMidleTitle = this.closest("#massage-part").querySelector("#massage-part-title").innerText;
 
-        // Get current time
+        // current time
          const currentTime = new Date().toLocaleTimeString('en-US', {
             hour: '2-digit',
             minute: '2-digit',
@@ -53,13 +64,14 @@ document.querySelectorAll('.complete-btn').forEach(button => {button.addEventLis
             hour12: true
         });
 
-        // Append task complet message
+        // Append message
         const message = document.createElement("p");
+        message.classList.add('mb-10');
         message.innerText = `You have completed the task ${massageMidleTitle} at ${currentTime}`;
-         massageBox.appendChild(message);
+        massageBox.appendChild(message);
         
 
-        // Clear history button event
+        // Clear history button
         clearHistoryBtn.addEventListener("click", function () {
         massageBox.innerHTML = ""; // Remove all messages
         });
@@ -68,10 +80,8 @@ document.querySelectorAll('.complete-btn').forEach(button => {button.addEventLis
         
         this.disabled = true;
         this.classList.add("bg-gray-300", "cursor-not-allowed");
+    });  
+});
 
-    });
-
-    
-})
 
 
