@@ -12,9 +12,9 @@
 </head>
 <body id="color-change" class="poppins-regular bg-red-500">
 
-    <div class="container mx-auto p-6">
+    <main class="container mx-auto p-6">
         <!-- Navbar -->
-        <div class="flex justify-between items-center bg-white p-4 shadow-md rounded-lg">
+        <section class="flex justify-between items-center bg-white p-4 shadow-md rounded-lg">
             <div class="flex items-center gap-3">
                 <img class="w-12" src="assets/logo.png" alt="">
                 <h1 class="text-4xl font-light text-blue-600">Dev<span class="text-black font-bold">Board</span></h1>
@@ -28,13 +28,13 @@
                     <img src="assets/theme-btn.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Dashboard Section -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
-            <div class="md:col-span-3">
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+            <section class="md:col-span-3">
                 <!-- Task Overview -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <section class="bg-white p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#F4F7FF] flex items-center gap-5 py-8 pl-8 pr-5 rounded-xl">
                             <div class="rounded-full p-3 bg-white">
@@ -45,7 +45,7 @@
                                 <h2 id="header-checkbox-count" class="text-3xl font-bold">06</h2>
                             </div>
                         </div>
-                        <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-[524px] h-[116px] pl-10 rounded-xl flex  items-center gap-6">
+                        <div id="discover-btn" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-[524px] h-[116px] pl-10 rounded-xl flex  items-center gap-6">
                             <img src="assets/board.png" alt="">
                             <h1 class="text-2xl font-medium text-white">Discover Something <br> New Today!</h1>
                         </div>
@@ -59,35 +59,33 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- Task Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
                     <!-- Task Card -->
-                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                    <div id="massage-part" class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                         <div class=" bg-white px-4 py-2 w-[114px] rounded-lg text-center mb-4">
                             <h3 class="text-sm font-semibold">ShopEase</h3>
                         </div>
-                        <h2 class="text-lg font-bold mt-1 mb-3">Fix Mobile Button Issue</h2>
+                        <h2 id="massage-part-title" class="text-lg font-bold mt-1 mb-3">Fix Mobile Button Issue</h2>
                         <div class="p-4 bg-white rounded-lg">
                             <p class="text-sm text-gray-500 mt-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly
+                                and ensure onClick works properly
                             </p>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <p class="text-sm text-gray-500 ">Deadline <br><span class="text-[#00303C] font-medium">21 March 2025</span></p>
-                            <div id="first-complete-btn" class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">
-                                <button>Completed</button>
-                            </div>
+                            <button id="first-complete-btn" class="complete-btn bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                    <div id="massage-part" class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                         <div class=" bg-white px-4 py-2 w-[114px] rounded-lg text-center mb-4">
                             <h3 class="text-sm font-semibold">CloudSync</h3>
                         </div>
-                        <h2 class="text-lg font-bold mt-1 mb-3">Add Dark Mode</h2>
+                        <h2 id="massage-part-title" class="text-lg font-bold mt-1 mb-3">Add Dark Mode</h2>
                         <div class="p-4 bg-white rounded-lg">
                             <p class="text-sm text-gray-500 mt-2">
                                 Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
@@ -95,102 +93,96 @@ and ensure onClick works properly
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <p class="text-sm text-gray-500">Deadline <br><span class="text-[#00303C] font-medium">21 March 2025</span></p>
-                            <div class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">
-                                <button>Completed</button>
-                            </div>
+                            <button id="second-complete-btn" class="complete-btn bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                    <div id="massage-part" class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                         <div class=" bg-white px-4 py-2 w-[114px] rounded-lg text-center mb-4">
                             <h3 class="text-sm font-semibold">SwiftPay</h3>
                         </div>
-                        <h2 class="text-lg font-bold mt-1 mb-3">Optimize  Home page</h2>
+                        <h2 id="massage-part-title" class="text-lg font-bold mt-1 mb-3">Optimize  Home page</h2>
                         <div class="p-4 bg-white rounded-lg">
                             <p class="text-sm text-gray-500 mt-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly
+                                and ensure onClick works properly
                             </p>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <p class="text-sm text-gray-500">Deadline <br><span class="text-[#00303C] font-medium">21 March 2025</span></p>
-                            <div class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">
-                                <button>Completed</button>
-                            </div>
+                            <button id="third-complete-btn" class="complete-btn bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                    <div id="massage-part" class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                         <div class=" bg-white px-4 py-2 w-[114px] rounded-lg text-center mb-4">
                             <h3 class="text-sm font-semibold">Meta</h3>
                         </div>
-                        <h2 class="text-lg font-bold mt-1 mb-3">Add new emoji 🤲</h2>
+                        <h2 id="massage-part-title" class="text-lg font-bold mt-1 mb-3">Add new emoji 🤲</h2>
                         <div class="p-4 bg-white rounded-lg">
                             <p class="text-sm text-gray-500 mt-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly
+                                and ensure onClick works properly
                             </p>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <p class="text-sm text-gray-500">Deadline <br><span class="text-[#00303C] font-medium">21 March 2025</span></p>
-                            <div class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">
-                                <button>Completed</button>
-                            </div>
+                            <button id="fourth-complete-btn" class="complete-btn bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                    <div id="massage-part" class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                         <div class=" bg-white px-4 py-2 w-[114px] rounded-lg text-center mb-4">
                             <h3 class="text-sm font-semibold">GoogleLLC</h3>
                         </div>
-                        <h2 class="text-lg font-bold mt-1 mb-3">Integrate OpenAI API </h2>
+                        <h2 id="massage-part-title" class="text-lg font-bold mt-1 mb-3">Integrate OpenAI API </h2>
                         <div class="p-4 bg-white rounded-lg">
                             <p class="text-sm text-gray-500 mt-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly
+                            and ensure onClick works properly
                             </p>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <p class="text-sm text-gray-500">Deadline <br><span class="text-[#00303C] font-medium">21 March 2025</span></p>
-                            <div class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">
-                                <button>Completed</button>
-                            </div>
+                            <button id="fifth-complete-btn" class="complete-btn bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                    <div id="massage-part" class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                         <div class=" bg-white px-4 py-2 w-[114px] rounded-lg text-center mb-4">
                             <h3 class="text-sm font-semibold">Glassdoar</h3>
                         </div>
-                        <h2 class="text-lg font-bold mt-1 mb-3">Improve Job searching</h2>
+                        <h2 id="massage-part-title" class="text-lg font-bold mt-1 mb-3">Improve Job searching</h2>
                         <div class="p-4 bg-white rounded-lg">
                             <p class="text-sm text-gray-500 mt-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly
+                                and ensure onClick works properly
                             </p>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <p class="text-sm text-gray-500">Deadline <br><span class="text-[#00303C] font-medium">21 March 2025</span></p>
-                            <div class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">
-                                <button>Completed</button>
-                            </div>
+                            <button id="sixth-complete-btn" class="complete-btn bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-semibold">Completed</button>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
 
             <!-- Activity Log -->
-            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+            <aside class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
                 <div class="flex items-center gap-6">
                     <img src="assets/activity.png" alt="">
                     <h2 class="text-lg font-semibold">Activity Log</h2>
                 </div>
-                <button class="bg-blue-600 text-white px-4 py-2 mt-4 rounded-lg">Clear History</button>
-            </div>
-        </div>
-    </div>
+                <button id="clear-history-btn" class="bg-blue-600 text-white px-4 py-2 mt-4 rounded-lg mb-8">Clear History</button>
+                <div id="massage-box" class="text-xl font-medium">
+
+                </div>
+            </aside>
+        </section>
+    </main>
 
 
     <script src="js/script.js"></script>
+    <!-- <script src="js/discover.js"></script> -->
 </body>
 </html>
